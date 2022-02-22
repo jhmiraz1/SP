@@ -1,0 +1,8 @@
+<html>
+  <head>
+    <title>Body bgcolor Attribute example</title>
+  </head>
+  <body bgcolor="#33FFF0">
+    <h1> Webpage  background color.</h1>
+  </body>
+</html>
