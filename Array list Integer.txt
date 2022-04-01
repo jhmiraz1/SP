@@ -1,0 +1,46 @@
+integer:::::
+
+package arraylistlt;
+
+import java.util.ArrayList;
+
+public class ArrayListLT {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> miraz = new ArrayList<Integer>();
+
+        miraz.add(93);
+        miraz.add(25);
+        miraz.add(55);
+
+        System.out.println("(Adding + getting ) Array List Elements : ");
+
+        for (int i = 0; i < miraz.size(); i++) {
+            System.out.println(miraz.get(i));
+        }
+
+        System.out.println("\nNew Array List after setting : ");
+
+        miraz.set(0, 15);
+
+        for (int i = 0; i < miraz.size(); i++) {
+            System.out.println(miraz.get(i));
+
+        }
+
+        System.out.println("\nAfter removing an element: ");
+        miraz.remove(0);
+
+        for (int i = 0; i < miraz.size(); i++) {
+
+            System.out.println(miraz.get(i));
+
+        }
+
+        miraz.clear();
+
+        System.out.println("array size " + miraz.size());
+
+    }
+
+}

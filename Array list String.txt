@@ -1,0 +1,42 @@
+String:::::
+
+package arraylistlt;
+
+import java.util.ArrayList;
+
+public class ArrayListString {
+    public static void main(String[] args) {
+        ArrayList <String> mir= new ArrayList <String>();
+        
+        mir.add("food");
+        mir.add("video games");
+        mir.add("coding its not for me ");
+        
+        System.out.println("Array List: ");
+        for (int i = 0; i < mir.size(); i++) {
+            System.out.println(mir.get(i));
+            
+        }
+        
+        System.out.println("\nnew Array list: ");
+        
+        mir.set(2, "no seems like i like coding");
+        
+        for (int i = 0; i <mir.size(); i++) {
+            System.out.println(mir.get(i));
+            
+        }
+        
+        System.out.println("\nAfter removing an element");
+        
+        mir.remove(0);
+        for (int i = 0; i < mir.size(); i++) {
+            System.out.println(mir.get(i));            
+        }
+        
+        mir.clear();
+        
+        System.out.println("\nArray list size after clearing :" +mir.size());
+    }
+    
+}
