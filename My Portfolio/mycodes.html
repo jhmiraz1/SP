@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Codes</title>
+    <style>
+              body {
+        backdrop-filter: blur(2px) ;
+        background-image: url("pexels-suzy-hazelwood-1629236.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+      }
+
+      div{
+     text-align: left;
+        color: aliceblue;
+        font-size: 20px;
+      }
+      #first{
+
+        color: rgb(236, 20, 20);
+      }
+      div {
+        margin: 8px;
+        border: 5px solid black;
+
+        width: auto;
+      }
+    </style>
+</head>
+<body>
+    <div
+      style="
+        color: beige;
+        font-size: 25px;
+
+        background-color: rgb(245, 246, 247);
+      "
+    >
+      <a href="Home.html">Home</a>
+
+      <a href="Education.html">My Education</a>
+
+      <a href="Hobby.html">My Hobby</a>
+      <a href="mycodes.html"> My Codes</a>
+    </div>
+
+    <div>
+      <h1 id="first">1: ArrayList Integer</h1>
+      <pre>
+  
+          package arraylistlt;
+  
+  import java.util.ArrayList;
+  
+  public class ArrayListLT {
+  
+      public static void main(String[] args) {
+          ArrayList<Integer> miraz = new ArrayList<Integer>();
+  
+          miraz.add(93);
+          miraz.add(25);
+          miraz.add(55);
+  
+          System.out.println("(Adding + getting ) Array List Elements : ");
+  
+          for (int i = 0; i < miraz.size(); i++) {
+              System.out.println(miraz.get(i));
+          }
+  
+          System.out.println("\nNew Array List after setting : ");
+  
+          miraz.set(0, 15);
+  
+          for (int i = 0; i < miraz.size(); i++) {
+              System.out.println(miraz.get(i));
+  
+          }
+  
+          System.out.println("\nAfter removing an element: ");
+          miraz.remove(0);
+  
+          for (int i = 0; i < miraz.size(); i++) {
+  
+              System.out.println(miraz.get(i));
+  
+          }
+  
+          miraz.clear();
+  
+          System.out.println("array size " + miraz.size());
+  
+      }
+  
+  }
+      </pre>
+
+
+    </div>
+
+    <div>
+      <h1 id="first">2: switchcase</h1>
+      <pre>
+  
+     
+package switchcase;
+
+import java.util.Scanner;
+
+
+public class SWITCHcASE {
+
+    
+    public static void main(String[] args) {
+        int digit;
+        Scanner input= new Scanner(System.in);
+        
+        System.out.println("Enter any digit = ");
+        
+        digit = input.nextInt();
+        
+        switch(digit){
+        
+            case 0:
+                
+                System.out.println("Zero");
+                break;
+                
+            case 1:
+                System.out.println("one");
+                break;
+                
+                case 2:
+                
+                System.out.println("two");
+                break;
+                
+            
+                case 3:
+                System.out.println("Three");
+                break;
+                
+            case 4:
+                System.out.println("four");
+                break;
+        
+            default :
+                System.out.println("Bigger");
+        }
+        
+    }
+    
+}
+
+      </pre>
+
+
+    </div>
+
+    
+    <div>
+      <h1 id="first">3: AreaOfCircle</h1>
+      <pre>
+  
+     
+        package labtask3;
+
+        import java.util.Scanner;
+        
+        public class AreaOfCircle {
+        
+            public static void main(String[] args) {
+        
+                double area;
+                System.out.println("Enter radius of circle: ");
+                Scanner mm = new Scanner(System.in);
+                Double radius = mm.nextDouble();
+        
+                area = Math.PI * radius * radius;
+                System.out.println("Area = " + area);
+            }
+        
+        }
+
+      </pre>
+
+
+    </div>
+
+    <div>
+      <h1 id="first">4: Multiplication</h1>
+      <pre>
+  
+     
+   
+package labtask1;
+
+import java.util.Scanner;
+
+
+public class Multiplication {
+    
+public static void main (String[]args)
+{
+  Scanner a = new Scanner (System.in );
+  int num;
+        
+  System.out.println("Enter a number");
+   num= a.nextInt();
+  for(int i=1; i <= 10; i++)
+    
+  {
+    System.out.println(num+" * " +i +" = "+num*i);
+  }
+  }
+    
+}
+
+      </pre>
+
+
+    </div>
+   
+    
+</body>
+</html>
