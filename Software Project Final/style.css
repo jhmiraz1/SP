@@ -1,0 +1,16 @@
+div.m {
+    margin: 5px;
+    border: 2px solid black ;
+    float: left;
+    width: 300px;
+  }
+
+  div.m img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.textt {
+    padding: 15px;
+    text-align: center;
+  }

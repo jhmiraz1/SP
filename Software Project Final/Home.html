@@ -1,0 +1,204 @@
+<html>
+  <head>
+    <title>Memory Hall</title>
+    <style>
+      .nav {
+        margin-right: 20rem;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: red;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        z-index: 10;
+      }
+      @media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+    
+  }
+
+      /*
+/* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The expanding image container (positioning is needed to position the close button and the text) */
+      .container {
+        border-radius: 10px;
+        position: relative;
+        display: none;
+      }
+
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Closable button inside the image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+
+      #upl {
+        width: 75%;
+      }
+      .form-box {
+        border-color: red;
+        border-width: 5px;
+        border-style: solid;
+        background: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="navbar" class="nav">
+      <br />
+      <!-- Load icon library -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <!-- The form -->
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.," name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <button href="# ">Home</button>
+      <a href="BIO.html">About</a>
+      <button>
+        <a href="https://codepen.io/robiullahprince/full/oNpGQwq"> Login </a>
+      </button>
+    </nav>
+    <br />
+    <center>
+      <div class="form-box">
+        <h4>Welcome to Memory Hall. If there any memory you want to share?</h4>
+        <form action="/action_page.php">
+          <input type="file" id="myFile" name="filename" />
+          <input type="submit" />
+        </form>
+      </div>
+      <br /><br />
+    </center>
+    <!-- The grid: four columns -->
+    <div class="row" style="display: flex; width: 100%">
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://www.wonderplugin.com/wp-content/uploads/2013/12/Island_1024.jpg"
+          alt="Nature"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://www.wonderplugin.com/wp-content/uploads/2013/12/Desert_1024.jpg"
+          alt="Snow"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://lh4.googleusercontent.com/4Av2Fu0vefjSULOPm3o7h_qeMtJe6qj1FYmfsiASvyshGhjUMKcHeKnq_-no2b04SYuArlkTHquT5zEHe-UknlM=w16383"
+          alt="Mountains"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Beautiful-lake-world-gallery-1920x1080-wallpapers.jpg"
+          alt="Lights"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+    <!-- The grid: four columns -->
+    <div class="row" style="display: flex; width: 100%">
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://lumiere-a.akamaihd.net/v1/images/p_cars_19643_4405006d.jpeg?region=0%2C0%2C540%2C810"
+          alt="Nature"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://www.rts.ch/2021/03/19/17/16/12059275.image?w=1240&h=960"
+          alt="Snow"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://lh4.googleusercontent.com/-q1D9q7PR6ljfHrLCosH3u9o838_81yB6zuvjF687P1ArGGQdzIZv5H133vtkx7QSNpRFztRmrOZ4kEVAZfdAYY=w16383"
+          alt="Mountains"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          style="width: 99%"
+          src="https://static.india.com/wp-content/uploads/2014/04/5-soulful-ways-to-support-your-best-friends.jpg?impolicy=Medium_Resize&w=1200&h=800"
+          alt="Lights"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width: 100%" />
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+  </body>
+  <html></html>
+</html>
